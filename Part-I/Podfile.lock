@@ -1,0 +1,73 @@
+PODS:
+  - Boardy (1.12.2):
+    - Boardy/Default (= 1.12.2)
+  - Boardy/Attachable (1.12.2):
+    - Boardy/Core
+    - Boardy/DeepLink
+  - Boardy/Core (1.12.2)
+  - Boardy/DeepLink (1.12.2):
+    - Boardy/Core
+  - Boardy/Default (1.12.2):
+    - Boardy/Attachable
+    - Boardy/Core
+  - Localize-Swift (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore (= 3.2.0)
+    - Localize-Swift/UIKit (= 3.2.0)
+  - Localize-Swift/LocalizeSwiftCore (3.2.0)
+  - Localize-Swift/UIKit (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore
+  - SiFUtilities (4.16.0):
+    - SiFUtilities/Default (= 4.16.0)
+  - SiFUtilities/Default (4.16.0):
+    - SiFUtilities/Endpoint
+    - SiFUtilities/Foundation
+    - SiFUtilities/Helpers
+    - SiFUtilities/IBDesignable
+    - SiFUtilities/KeyValue
+    - SiFUtilities/Loading
+    - SiFUtilities/Localize
+    - SiFUtilities/Media
+    - SiFUtilities/Nib
+    - SiFUtilities/Runtime
+    - SiFUtilities/Show
+    - SiFUtilities/UIKit
+    - SiFUtilities/WeakObject
+  - SiFUtilities/Endpoint (4.16.0)
+  - SiFUtilities/Foundation (4.16.0)
+  - SiFUtilities/Helpers (4.16.0)
+  - SiFUtilities/IBDesignable (4.16.0):
+    - SiFUtilities/UIKit
+  - SiFUtilities/KeyValue (4.16.0)
+  - SiFUtilities/Loading (4.16.0)
+  - SiFUtilities/Localize (4.16.0):
+    - Localize-Swift
+    - SiFUtilities/Foundation
+    - SiFUtilities/Runtime
+    - SiFUtilities/UIKit
+  - SiFUtilities/Media (4.16.0)
+  - SiFUtilities/Nib (4.16.0):
+    - SiFUtilities/Foundation
+  - SiFUtilities/Runtime (4.16.0)
+  - SiFUtilities/Show (4.16.0):
+    - SiFUtilities/UIKit
+  - SiFUtilities/UIKit (4.16.0)
+  - SiFUtilities/WeakObject (4.16.0)
+
+DEPENDENCIES:
+  - Boardy
+  - SiFUtilities
+
+SPEC REPOS:
+  trunk:
+    - Boardy
+    - Localize-Swift
+    - SiFUtilities
+
+SPEC CHECKSUMS:
+  Boardy: b80fec3415a2df760a30f81b44b3c2eef606d205
+  Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
+  SiFUtilities: 2c59ad547721234942d0713f07fce442f78a955e
+
+PODFILE CHECKSUM: 1bf43d859dee7c149784d5f00d2d3525276ea9a9
+
+COCOAPODS: 1.10.1
