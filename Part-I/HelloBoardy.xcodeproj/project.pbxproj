@@ -3,10 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20F997F125FC76AA00D63DD5 /* BoardIdentities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F997F025FC76AA00D63DD5 /* BoardIdentities.swift */; };
+		20F997F525FC76CE00D63DD5 /* BoardProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F997F425FC76CE00D63DD5 /* BoardProducer.swift */; };
+		20F9980B25FCA95B00D63DD5 /* RootBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9980A25FCA95B00D63DD5 /* RootBoard.swift */; };
+		20F9980F25FD092900D63DD5 /* LoginBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9980E25FD092900D63DD5 /* LoginBoard.swift */; };
+		20F9981625FD093300D63DD5 /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9981125FD093300D63DD5 /* LoginBuilder.swift */; };
+		20F9981725FD093300D63DD5 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F9981225FD093300D63DD5 /* LoginViewController.storyboard */; };
+		20F9981825FD093300D63DD5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9981325FD093300D63DD5 /* LoginViewController.swift */; };
+		20F9981925FD093300D63DD5 /* LoginViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9981425FD093300D63DD5 /* LoginViewState.swift */; };
+		20F9981A25FD093300D63DD5 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9981525FD093300D63DD5 /* LoginProtocols.swift */; };
+		20F9982525FD0DBA00D63DD5 /* RegisterBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9982425FD0DBA00D63DD5 /* RegisterBoard.swift */; };
+		20F9982C25FD0DCD00D63DD5 /* RegisterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9982725FD0DCD00D63DD5 /* RegisterBuilder.swift */; };
+		20F9982D25FD0DCD00D63DD5 /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F9982825FD0DCD00D63DD5 /* RegisterViewController.storyboard */; };
+		20F9982E25FD0DCD00D63DD5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9982925FD0DCD00D63DD5 /* RegisterViewController.swift */; };
+		20F9982F25FD0DCD00D63DD5 /* RegisterViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9982A25FD0DCD00D63DD5 /* RegisterViewState.swift */; };
+		20F9983025FD0DCD00D63DD5 /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9982B25FD0DCD00D63DD5 /* RegisterProtocols.swift */; };
+		20F9983425FD103300D63DD5 /* HomeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9983325FD103300D63DD5 /* HomeBoard.swift */; };
+		20F9983B25FD104700D63DD5 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9983625FD104700D63DD5 /* HomeBuilder.swift */; };
+		20F9983C25FD104700D63DD5 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F9983725FD104700D63DD5 /* HomeViewController.storyboard */; };
+		20F9983D25FD104700D63DD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9983825FD104700D63DD5 /* HomeViewController.swift */; };
+		20F9983E25FD104700D63DD5 /* HomeViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9983925FD104700D63DD5 /* HomeViewState.swift */; };
+		20F9983F25FD104700D63DD5 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9983A25FD104700D63DD5 /* HomeProtocols.swift */; };
 		272C03C525F5C32800BDE77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C03C425F5C32800BDE77C /* AppDelegate.swift */; };
 		272C03C925F5C32800BDE77C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C03C825F5C32800BDE77C /* ViewController.swift */; };
 		272C03CC25F5C32800BDE77C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272C03CA25F5C32800BDE77C /* Main.storyboard */; };
@@ -17,6 +38,27 @@
 
 /* Begin PBXFileReference section */
 		137EFF4E5620C5E4BCA2300D /* Pods-HelloBoardy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloBoardy.debug.xcconfig"; path = "Target Support Files/Pods-HelloBoardy/Pods-HelloBoardy.debug.xcconfig"; sourceTree = "<group>"; };
+		20F997F025FC76AA00D63DD5 /* BoardIdentities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardIdentities.swift; sourceTree = "<group>"; };
+		20F997F425FC76CE00D63DD5 /* BoardProducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardProducer.swift; sourceTree = "<group>"; };
+		20F9980A25FCA95B00D63DD5 /* RootBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBoard.swift; sourceTree = "<group>"; };
+		20F9980E25FD092900D63DD5 /* LoginBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBoard.swift; sourceTree = "<group>"; };
+		20F9981125FD093300D63DD5 /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
+		20F9981225FD093300D63DD5 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		20F9981325FD093300D63DD5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		20F9981425FD093300D63DD5 /* LoginViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewState.swift; sourceTree = "<group>"; };
+		20F9981525FD093300D63DD5 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		20F9982425FD0DBA00D63DD5 /* RegisterBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBoard.swift; sourceTree = "<group>"; };
+		20F9982725FD0DCD00D63DD5 /* RegisterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBuilder.swift; sourceTree = "<group>"; };
+		20F9982825FD0DCD00D63DD5 /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
+		20F9982925FD0DCD00D63DD5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		20F9982A25FD0DCD00D63DD5 /* RegisterViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewState.swift; sourceTree = "<group>"; };
+		20F9982B25FD0DCD00D63DD5 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
+		20F9983325FD103300D63DD5 /* HomeBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBoard.swift; sourceTree = "<group>"; };
+		20F9983625FD104700D63DD5 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		20F9983725FD104700D63DD5 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		20F9983825FD104700D63DD5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		20F9983925FD104700D63DD5 /* HomeViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewState.swift; sourceTree = "<group>"; };
+		20F9983A25FD104700D63DD5 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		272C03C125F5C32800BDE77C /* HelloBoardy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloBoardy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272C03C425F5C32800BDE77C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272C03C825F5C32800BDE77C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +82,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20F997ED25FC764E00D63DD5 /* Microsystems */ = {
+			isa = PBXGroup;
+			children = (
+				20F9980925FCA94A00D63DD5 /* Root */,
+				20F997F925FC770100D63DD5 /* Home */,
+				20F997F825FC76E400D63DD5 /* Register */,
+				20F997F725FC76DC00D63DD5 /* Login */,
+			);
+			path = Microsystems;
+			sourceTree = "<group>";
+		};
+		20F997EE25FC765A00D63DD5 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				20F997F425FC76CE00D63DD5 /* BoardProducer.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		20F997EF25FC766100D63DD5 /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				20F997F025FC76AA00D63DD5 /* BoardIdentities.swift */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
+		20F997F725FC76DC00D63DD5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				20F9980E25FD092900D63DD5 /* LoginBoard.swift */,
+				20F9981125FD093300D63DD5 /* LoginBuilder.swift */,
+				20F9981525FD093300D63DD5 /* LoginProtocols.swift */,
+				20F9981225FD093300D63DD5 /* LoginViewController.storyboard */,
+				20F9981325FD093300D63DD5 /* LoginViewController.swift */,
+				20F9981425FD093300D63DD5 /* LoginViewState.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		20F997F825FC76E400D63DD5 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				20F9982425FD0DBA00D63DD5 /* RegisterBoard.swift */,
+				20F9982725FD0DCD00D63DD5 /* RegisterBuilder.swift */,
+				20F9982B25FD0DCD00D63DD5 /* RegisterProtocols.swift */,
+				20F9982825FD0DCD00D63DD5 /* RegisterViewController.storyboard */,
+				20F9982925FD0DCD00D63DD5 /* RegisterViewController.swift */,
+				20F9982A25FD0DCD00D63DD5 /* RegisterViewState.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		20F997F925FC770100D63DD5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				20F9983325FD103300D63DD5 /* HomeBoard.swift */,
+				20F9983625FD104700D63DD5 /* HomeBuilder.swift */,
+				20F9983A25FD104700D63DD5 /* HomeProtocols.swift */,
+				20F9983725FD104700D63DD5 /* HomeViewController.storyboard */,
+				20F9983825FD104700D63DD5 /* HomeViewController.swift */,
+				20F9983925FD104700D63DD5 /* HomeViewState.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		20F9980925FCA94A00D63DD5 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				20F9980A25FCA95B00D63DD5 /* RootBoard.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		272C03B825F5C32800BDE77C = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +177,9 @@
 		272C03C325F5C32800BDE77C /* HelloBoardy */ = {
 			isa = PBXGroup;
 			children = (
+				20F997EF25FC766100D63DD5 /* Definitions */,
+				20F997EE25FC765A00D63DD5 /* Factories */,
+				20F997ED25FC764E00D63DD5 /* Microsystems */,
 				272C03C425F5C32800BDE77C /* AppDelegate.swift */,
 				272C03C825F5C32800BDE77C /* ViewController.swift */,
 				272C03CA25F5C32800BDE77C /* Main.storyboard */,
@@ -77,7 +196,6 @@
 				137EFF4E5620C5E4BCA2300D /* Pods-HelloBoardy.debug.xcconfig */,
 				72D330BCC5CCAD4F0CF60095 /* Pods-HelloBoardy.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -149,6 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				272C03D125F5C32900BDE77C /* LaunchScreen.storyboard in Resources */,
+				20F9981725FD093300D63DD5 /* LoginViewController.storyboard in Resources */,
+				20F9983C25FD104700D63DD5 /* HomeViewController.storyboard in Resources */,
+				20F9982D25FD0DCD00D63DD5 /* RegisterViewController.storyboard in Resources */,
 				272C03CE25F5C32900BDE77C /* Assets.xcassets in Resources */,
 				272C03CC25F5C32800BDE77C /* Main.storyboard in Resources */,
 			);
@@ -203,7 +324,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F9983025FD0DCD00D63DD5 /* RegisterProtocols.swift in Sources */,
+				20F9980B25FCA95B00D63DD5 /* RootBoard.swift in Sources */,
+				20F9981A25FD093300D63DD5 /* LoginProtocols.swift in Sources */,
 				272C03C925F5C32800BDE77C /* ViewController.swift in Sources */,
+				20F9981625FD093300D63DD5 /* LoginBuilder.swift in Sources */,
+				20F9983E25FD104700D63DD5 /* HomeViewState.swift in Sources */,
+				20F9983D25FD104700D63DD5 /* HomeViewController.swift in Sources */,
+				20F997F125FC76AA00D63DD5 /* BoardIdentities.swift in Sources */,
+				20F9981925FD093300D63DD5 /* LoginViewState.swift in Sources */,
+				20F9981825FD093300D63DD5 /* LoginViewController.swift in Sources */,
+				20F9982F25FD0DCD00D63DD5 /* RegisterViewState.swift in Sources */,
+				20F997F525FC76CE00D63DD5 /* BoardProducer.swift in Sources */,
+				20F9982C25FD0DCD00D63DD5 /* RegisterBuilder.swift in Sources */,
+				20F9983425FD103300D63DD5 /* HomeBoard.swift in Sources */,
+				20F9980F25FD092900D63DD5 /* LoginBoard.swift in Sources */,
+				20F9982E25FD0DCD00D63DD5 /* RegisterViewController.swift in Sources */,
+				20F9983F25FD104700D63DD5 /* HomeProtocols.swift in Sources */,
+				20F9982525FD0DBA00D63DD5 /* RegisterBoard.swift in Sources */,
+				20F9983B25FD104700D63DD5 /* HomeBuilder.swift in Sources */,
 				272C03C525F5C32800BDE77C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

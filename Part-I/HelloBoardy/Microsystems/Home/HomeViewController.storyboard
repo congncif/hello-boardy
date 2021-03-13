@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kOx-7S-liq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hello Boardy-->
+        <scene sceneID="UeT-4x-rcP">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="kOx-7S-liq" customClass="HomeViewController" customModule="HelloBoardy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bSZ-gG-gj5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boardy" translatesAutoresizingMaskIntoConstraints="NO" id="ah8-54-VrV">
+                                <rect key="frame" x="16" y="168" width="382" height="151"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Boardy!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nM4-kO-rIR">
+                                <rect key="frame" x="16" y="112" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vkK-vj-Ps2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ah8-54-VrV" firstAttribute="leading" secondItem="bSZ-gG-gj5" secondAttribute="leading" constant="16" id="1u2-cU-mAt"/>
+                            <constraint firstItem="nM4-kO-rIR" firstAttribute="top" secondItem="vkK-vj-Ps2" secondAttribute="top" constant="24" id="2k5-nc-W69"/>
+                            <constraint firstItem="nM4-kO-rIR" firstAttribute="leading" secondItem="vkK-vj-Ps2" secondAttribute="leading" constant="16" id="e39-hM-VuV"/>
+                            <constraint firstItem="ah8-54-VrV" firstAttribute="centerX" secondItem="bSZ-gG-gj5" secondAttribute="centerX" id="oda-Dm-gpN"/>
+                            <constraint firstItem="ah8-54-VrV" firstAttribute="top" secondItem="vkK-vj-Ps2" secondAttribute="top" constant="80" id="ss1-wR-4NI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hello Boardy" id="wRP-sK-xz5">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Leg-EJ-Xn4"/>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="dQt-3N-hln">
+                            <connections>
+                                <action selector="logoutButtonDidTap" destination="kOx-7S-liq" id="kba-Mt-T6J"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="nM4-kO-rIR" id="ith-Fr-GNE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikk-K8-l44" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="87"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Boardy" width="425" height="151"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

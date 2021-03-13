@@ -1,13 +1,13 @@
 PODS:
-  - Boardy (1.12.2):
-    - Boardy/Default (= 1.12.2)
-  - Boardy/Attachable (1.12.2):
+  - Boardy (1.13.0):
+    - Boardy/Default (= 1.13.0)
+  - Boardy/Attachable (1.13.0):
     - Boardy/Core
     - Boardy/DeepLink
-  - Boardy/Core (1.12.2)
-  - Boardy/DeepLink (1.12.2):
+  - Boardy/Core (1.13.0)
+  - Boardy/DeepLink (1.13.0):
     - Boardy/Core
-  - Boardy/Default (1.12.2):
+  - Boardy/Default (1.13.0):
     - Boardy/Attachable
     - Boardy/Core
   - Localize-Swift (3.2.0):
@@ -52,22 +52,30 @@ PODS:
     - SiFUtilities/UIKit
   - SiFUtilities/UIKit (4.16.0)
   - SiFUtilities/WeakObject (4.16.0)
+  - TinyInjector (0.1.0)
+  - ViewStateCore (1.7.0)
 
 DEPENDENCIES:
   - Boardy
   - SiFUtilities
+  - TinyInjector
+  - ViewStateCore
 
 SPEC REPOS:
   trunk:
     - Boardy
     - Localize-Swift
     - SiFUtilities
+    - TinyInjector
+    - ViewStateCore
 
 SPEC CHECKSUMS:
-  Boardy: b80fec3415a2df760a30f81b44b3c2eef606d205
+  Boardy: 010e58b66a30cb65efbc81d349de8f69c7149842
   Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
   SiFUtilities: 2c59ad547721234942d0713f07fce442f78a955e
+  TinyInjector: 476a499d7435c8b8013094f243655720ecc9aacd
+  ViewStateCore: 2f433a0e17e44edf36e90f52c0887d981c08d1a7
 
-PODFILE CHECKSUM: 1bf43d859dee7c149784d5f00d2d3525276ea9a9
+PODFILE CHECKSUM: 25ce9193232bcfa56c025672288a70f95df6241d
 
 COCOAPODS: 1.10.1
