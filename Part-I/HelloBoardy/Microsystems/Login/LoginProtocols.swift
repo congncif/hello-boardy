@@ -8,9 +8,7 @@
 
 import UIKit
 
-protocol LoginController: UIViewController {
-    var delegate: LoginDelegate? { get set }
-}
+protocol LoginController: UIViewController {}
 
 protocol LoginDelegate: AnyObject {
     func loggedInSuccessfully(user: String)
@@ -18,5 +16,5 @@ protocol LoginDelegate: AnyObject {
 }
 
 protocol LoginBuildable {
-    func build() -> LoginController
+    func build(withDelegate delegate: LoginDelegate?) -> LoginController
 }

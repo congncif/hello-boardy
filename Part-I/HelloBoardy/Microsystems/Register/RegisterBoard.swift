@@ -21,8 +21,7 @@ final class RegisterBoard: Board, GuaranteedBoard {
     }
 
     func activate(withGuaranteedInput input: InputType) {
-        let viewController = builder.build()
-        viewController.delegate = self
+        let viewController = builder.build(withDelegate: self)
         window.setRootViewController(viewController)
     }
 }

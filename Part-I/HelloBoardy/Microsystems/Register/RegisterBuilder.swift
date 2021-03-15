@@ -3,14 +3,16 @@
 //  HelloBoardy
 //
 //  Created by FOLY on 3/13/21.
-//  
+//
 //
 
-import UIKit
 import SiFUtilities
+import UIKit
 
 struct RegisterBuilder: RegisterBuildable {
-    func build() -> RegisterController {
-        RegisterViewController.instantiateFromStoryboard()
+    func build(withDelegate delegate: RegisterDelegate?) -> RegisterController {
+        let controller = RegisterViewController.instantiateFromStoryboard()
+        controller.delegate = delegate
+        return controller
     }
 }

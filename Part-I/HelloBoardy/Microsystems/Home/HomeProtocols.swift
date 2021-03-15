@@ -9,8 +9,6 @@
 import UIKit
 
 protocol HomeController: UIViewController {
-    var delegate: HomeDelegate? { get set }
-
     func withUser(_ user: String)
 }
 
@@ -19,5 +17,5 @@ protocol HomeDelegate: AnyObject {
 }
 
 protocol HomeBuildable {
-    func build() -> HomeController
+    func build(withDelegate delegate: HomeDelegate?) -> HomeController
 }

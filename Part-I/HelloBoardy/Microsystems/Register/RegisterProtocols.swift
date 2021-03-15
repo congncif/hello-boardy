@@ -3,14 +3,12 @@
 //  HelloBoardy
 //
 //  Created by FOLY on 3/13/21.
-//  
+//
 //
 
 import UIKit
 
-protocol RegisterController: UIViewController {
-    var delegate: RegisterDelegate? { get set }
-}
+protocol RegisterController: UIViewController {}
 
 protocol RegisterDelegate: AnyObject {
     func registeredSuccessfully(user: String)
@@ -18,5 +16,5 @@ protocol RegisterDelegate: AnyObject {
 }
 
 protocol RegisterBuildable {
-    func build() -> RegisterController
+    func build(withDelegate delegate: RegisterDelegate?) -> RegisterController
 }

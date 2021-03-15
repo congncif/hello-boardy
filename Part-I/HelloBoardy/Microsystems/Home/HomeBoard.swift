@@ -21,8 +21,7 @@ final class HomeBoard: Board, GuaranteedBoard {
     }
 
     func activate(withGuaranteedInput input: InputType) {
-        let viewController = builder.build()
-        viewController.delegate = self
+        let viewController = builder.build(withDelegate: self)
         let nav = UINavigationController(rootViewController: viewController)
         window.setRootViewController(nav)
 
