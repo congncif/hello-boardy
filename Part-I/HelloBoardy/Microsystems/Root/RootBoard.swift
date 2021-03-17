@@ -15,16 +15,9 @@ final class RootBoard: ContinuousBoard, GuaranteedBoard {
 
     init(motherboard: FlowMotherboard) {
         super.init(motherboard: motherboard)
-        registerFlows()
     }
 
     func activate(withGuaranteedInput input: InputType) {
         continueBoard(.login)
-    }
-
-    private func registerFlows() {
-        motherboard.registerGuaranteedFlow(matchedIdentifiers: .login, target: self, uniqueOutputType: String.self) { target, output in
-            target.continueBoard(.home(user: output))
-        }
     }
 }
