@@ -1,0 +1,91 @@
+PODS:
+  - Alamofire (5.4.1)
+  - Boardy (1.14.0):
+    - Boardy/Default (= 1.14.0)
+  - Boardy/Attachable (1.14.0):
+    - Boardy/Core
+    - Boardy/DeepLink
+  - Boardy/Core (1.14.0)
+  - Boardy/DeepLink (1.14.0):
+    - Boardy/Core
+  - Boardy/Default (1.14.0):
+    - Boardy/Attachable
+    - Boardy/Core
+  - Localize-Swift (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore (= 3.2.0)
+    - Localize-Swift/UIKit (= 3.2.0)
+  - Localize-Swift/LocalizeSwiftCore (3.2.0)
+  - Localize-Swift/UIKit (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+  - SiFUtilities (4.17.1):
+    - SiFUtilities/Default (= 4.17.1)
+  - SiFUtilities/Default (4.17.1):
+    - SiFUtilities/Endpoint
+    - SiFUtilities/Foundation
+    - SiFUtilities/Helpers
+    - SiFUtilities/IBDesignable
+    - SiFUtilities/KeyValue
+    - SiFUtilities/Loading
+    - SiFUtilities/Localize
+    - SiFUtilities/Media
+    - SiFUtilities/Nib
+    - SiFUtilities/Runtime
+    - SiFUtilities/Show
+    - SiFUtilities/UIKit
+    - SiFUtilities/WeakObject
+  - SiFUtilities/Endpoint (4.17.1)
+  - SiFUtilities/Foundation (4.17.1)
+  - SiFUtilities/Helpers (4.17.1)
+  - SiFUtilities/IBDesignable (4.17.1):
+    - SiFUtilities/UIKit
+  - SiFUtilities/KeyValue (4.17.1)
+  - SiFUtilities/Loading (4.17.1)
+  - SiFUtilities/Localize (4.17.1):
+    - Localize-Swift
+    - SiFUtilities/Foundation
+    - SiFUtilities/Runtime
+    - SiFUtilities/UIKit
+  - SiFUtilities/Media (4.17.1)
+  - SiFUtilities/Nib (4.17.1):
+    - SiFUtilities/Foundation
+  - SiFUtilities/Runtime (4.17.1)
+  - SiFUtilities/Show (4.17.1):
+    - SiFUtilities/UIKit
+  - SiFUtilities/UIKit (4.17.1)
+  - SiFUtilities/WeakObject (4.17.1)
+  - TinyInjector (0.1.0)
+  - ViewStateCore (1.7.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Boardy
+  - SDWebImage
+  - SiFUtilities
+  - TinyInjector
+  - ViewStateCore
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Boardy
+    - Localize-Swift
+    - SDWebImage
+    - SiFUtilities
+    - TinyInjector
+    - ViewStateCore
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Boardy: 3042259a6ecd72a503faf796e719069298132d3e
+  Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  SiFUtilities: 6e2b198ae66898a3ad05ec2b25a1632f570c9ac2
+  TinyInjector: 476a499d7435c8b8013094f243655720ecc9aacd
+  ViewStateCore: 2f433a0e17e44edf36e90f52c0887d981c08d1a7
+
+PODFILE CHECKSUM: 30525ed5c46ee19ed65bf731410c82590460428e
+
+COCOAPODS: 1.10.1

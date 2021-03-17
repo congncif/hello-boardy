@@ -1,0 +1,14 @@
+source 'https://cdn.cocoapods.org/'
+
+platform :ios, '11.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'HelloBoardy' do
+  pod 'Alamofire'
+	pod 'Boardy'
+	pod 'TinyInjector'
+	pod 'SiFUtilities'
+  pod 'SDWebImage'
+  pod 'ViewStateCore'
+end
