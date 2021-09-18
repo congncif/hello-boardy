@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kOx-7S-liq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="UeT-4x-rcP">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="kOx-7S-liq" customClass="LoginViewController" customModule="HelloAuth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bSZ-gG-gj5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DD4-uP-fpe">
+                                <rect key="frame" x="16" y="348" width="382" height="200"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aG8-t6-N4v">
+                                        <rect key="frame" x="20" y="20" width="342" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IYd-j5-HMv">
+                                        <rect key="frame" x="20" y="70" width="342" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kW0-Ub-Pmd" customClass="TouchColorButton" customModule="SiFUtilities">
+                                        <rect key="frame" x="20" y="136" width="342" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="mQf-ey-1xa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="LOGIN"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" systemColor="systemOrangeColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="circleBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonDidTap" destination="kOx-7S-liq" eventType="touchUpInside" id="NA0-Qv-oAj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="aG8-t6-N4v" firstAttribute="top" secondItem="DD4-uP-fpe" secondAttribute="top" constant="20" symbolic="YES" id="7m5-EI-4Vy"/>
+                                    <constraint firstItem="kW0-Ub-Pmd" firstAttribute="top" secondItem="IYd-j5-HMv" secondAttribute="bottom" constant="32" id="8KW-iX-EPD"/>
+                                    <constraint firstAttribute="trailing" secondItem="aG8-t6-N4v" secondAttribute="trailing" constant="20" symbolic="YES" id="9cw-d2-gf5"/>
+                                    <constraint firstItem="aG8-t6-N4v" firstAttribute="leading" secondItem="DD4-uP-fpe" secondAttribute="leading" constant="20" symbolic="YES" id="TtU-at-rtT"/>
+                                    <constraint firstAttribute="trailing" secondItem="IYd-j5-HMv" secondAttribute="trailing" constant="20" symbolic="YES" id="aSr-Fx-Q8o"/>
+                                    <constraint firstAttribute="bottom" secondItem="kW0-Ub-Pmd" secondAttribute="bottom" constant="20" symbolic="YES" id="fbN-B0-4wi"/>
+                                    <constraint firstItem="IYd-j5-HMv" firstAttribute="top" secondItem="aG8-t6-N4v" secondAttribute="bottom" constant="16" id="mEa-OD-aKW"/>
+                                    <constraint firstItem="kW0-Ub-Pmd" firstAttribute="leading" secondItem="DD4-uP-fpe" secondAttribute="leading" constant="20" symbolic="YES" id="sUL-Ow-udr"/>
+                                    <constraint firstAttribute="trailing" secondItem="kW0-Ub-Pmd" secondAttribute="trailing" constant="20" symbolic="YES" id="skJ-31-d4w"/>
+                                    <constraint firstItem="IYd-j5-HMv" firstAttribute="leading" secondItem="DD4-uP-fpe" secondAttribute="leading" constant="20" symbolic="YES" id="ufL-Wq-pPi"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELLO BOARDY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6Q-9u-5hG">
+                                <rect key="frame" x="142" y="148" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRW-xz-Phx">
+                                <rect key="frame" x="133" y="556" width="148" height="30"/>
+                                <state key="normal" title="Register new account"/>
+                                <connections>
+                                    <action selector="registerButtonDidTap" destination="kOx-7S-liq" eventType="touchUpInside" id="Lxf-dQ-3Iy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vkK-vj-Ps2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="j6Q-9u-5hG" firstAttribute="top" secondItem="vkK-vj-Ps2" secondAttribute="top" constant="60" id="9Gs-X8-NMh"/>
+                            <constraint firstItem="DD4-uP-fpe" firstAttribute="leading" secondItem="vkK-vj-Ps2" secondAttribute="leading" constant="16" id="Jjx-u3-5W8"/>
+                            <constraint firstItem="DD4-uP-fpe" firstAttribute="centerX" secondItem="bSZ-gG-gj5" secondAttribute="centerX" id="Mta-JZ-Ydt"/>
+                            <constraint firstItem="DD4-uP-fpe" firstAttribute="centerY" secondItem="bSZ-gG-gj5" secondAttribute="centerY" id="mjW-Uq-phx"/>
+                            <constraint firstItem="jRW-xz-Phx" firstAttribute="centerX" secondItem="kW0-Ub-Pmd" secondAttribute="centerX" id="ohz-wa-j4d"/>
+                            <constraint firstItem="j6Q-9u-5hG" firstAttribute="centerX" secondItem="bSZ-gG-gj5" secondAttribute="centerX" id="qUx-10-ULG"/>
+                            <constraint firstItem="jRW-xz-Phx" firstAttribute="top" secondItem="DD4-uP-fpe" secondAttribute="bottom" constant="8" symbolic="YES" id="vOD-Xv-N6J"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UML-et-uOo" appends="YES" id="5hn-WC-u2I"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="wRP-sK-xz5">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Leg-EJ-Xn4"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="passwordField" destination="IYd-j5-HMv" id="WcS-ZB-vl9"/>
+                        <outlet property="usernameField" destination="aG8-t6-N4v" id="Zki-Ib-JJr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikk-K8-l44" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UML-et-uOo">
+                    <connections>
+                        <action selector="backgroundViewDidTap" destination="kOx-7S-liq" id="DD9-Ba-lf3"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,131 @@
+PODS:
+  - Alamofire (5.4.3)
+  - Boardy (1.32.2):
+    - Boardy/Default (= 1.32.2)
+  - Boardy/Attachable (1.32.2):
+    - Boardy/Core
+  - Boardy/ComponentKit (1.32.2):
+    - Boardy/Core
+  - Boardy/Core (1.32.2)
+  - Boardy/Default (1.32.2):
+    - Boardy/Attachable
+    - Boardy/Core
+  - Boardy/ModulePlugin (1.32.2):
+    - Boardy/Core
+  - GHSearch (0.1.0):
+    - Alamofire
+    - Boardy/ModulePlugin
+    - GHSearchIO
+    - SDWebImage
+    - SiFUtilities
+  - GHSearchIO (0.1.0):
+    - Boardy
+  - HelloAuth (0.1.0):
+    - Boardy/ModulePlugin
+    - HelloAuthIO
+    - SiFUtilities
+  - HelloAuthIO (0.1.0):
+    - Boardy
+  - Home (0.1.0):
+    - Boardy/ModulePlugin
+    - GHSearchIO
+    - HelloAuthIO
+    - HomeIO
+    - SiFUtilities
+  - HomeIO (0.1.0):
+    - Boardy
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - SiFUtilities (4.23.1):
+    - SiFUtilities/Default (= 4.23.1)
+  - SiFUtilities/Boardy (4.23.1):
+    - Boardy/ComponentKit
+    - SiFUtilities/Loading
+    - SiFUtilities/Show
+  - SiFUtilities/Default (4.23.1):
+    - SiFUtilities/Boardy
+    - SiFUtilities/Endpoint
+    - SiFUtilities/Foundation
+    - SiFUtilities/Helpers
+    - SiFUtilities/IBDesignable
+    - SiFUtilities/KeyValue
+    - SiFUtilities/Loading
+    - SiFUtilities/Media
+    - SiFUtilities/Nib
+    - SiFUtilities/Runtime
+    - SiFUtilities/Show
+    - SiFUtilities/UIKit
+    - SiFUtilities/WeakObject
+  - SiFUtilities/Endpoint (4.23.1)
+  - SiFUtilities/Foundation (4.23.1)
+  - SiFUtilities/Helpers (4.23.1)
+  - SiFUtilities/IBDesignable (4.23.1):
+    - SiFUtilities/UIKit
+  - SiFUtilities/KeyValue (4.23.1)
+  - SiFUtilities/Loading (4.23.1)
+  - SiFUtilities/Media (4.23.1)
+  - SiFUtilities/Nib (4.23.1):
+    - SiFUtilities/Foundation
+  - SiFUtilities/Runtime (4.23.1)
+  - SiFUtilities/Show (4.23.1):
+    - SiFUtilities/UIKit
+  - SiFUtilities/UIKit (4.23.1)
+  - SiFUtilities/WeakObject (4.23.1)
+  - TinyInjector (0.1.0)
+  - ViewStateCore (1.7.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Boardy
+  - GHSearch (from `submodules/gh-search`)
+  - GHSearchIO (from `submodules/gh-search`)
+  - HelloAuth (from `submodules/hello-auth`)
+  - HelloAuthIO (from `submodules/hello-auth`)
+  - Home (from `submodules/home`)
+  - HomeIO (from `submodules/home`)
+  - SDWebImage
+  - SiFUtilities
+  - TinyInjector
+  - ViewStateCore
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Boardy
+    - SDWebImage
+    - SiFUtilities
+    - TinyInjector
+    - ViewStateCore
+
+EXTERNAL SOURCES:
+  GHSearch:
+    :path: submodules/gh-search
+  GHSearchIO:
+    :path: submodules/gh-search
+  HelloAuth:
+    :path: submodules/hello-auth
+  HelloAuthIO:
+    :path: submodules/hello-auth
+  Home:
+    :path: submodules/home
+  HomeIO:
+    :path: submodules/home
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Boardy: fb21e2c3fd51640bf60453151ce6d2e181903a74
+  GHSearch: b582ba5cb18b1ce55554ca10ac83593b46681fa0
+  GHSearchIO: 68f514b23f601cea6c8bc6913b39f954edceefc6
+  HelloAuth: f3872bad0c12067fd5d13cb3659273db258e24de
+  HelloAuthIO: 5cc0596d7449fa371884cab3238e13ae20832a09
+  Home: 9c85a64155fcefe625ceb5895085240750d18b0c
+  HomeIO: 1a058e51eccc46028423b9107deae7490221f368
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SiFUtilities: 200da09bee8bde6bbe7fb494c281daf6ac57aff2
+  TinyInjector: 476a499d7435c8b8013094f243655720ecc9aacd
+  ViewStateCore: 2f433a0e17e44edf36e90f52c0887d981c08d1a7
+
+PODFILE CHECKSUM: 81b024093084d0f497b7473184d2e5bf773ff2a4
+
+COCOAPODS: 1.11.2
