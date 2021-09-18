@@ -72,22 +72,14 @@ PODS:
     - SiFUtilities/UIKit
   - SiFUtilities/UIKit (4.23.1)
   - SiFUtilities/WeakObject (4.23.1)
-  - TinyInjector (0.1.0)
-  - ViewStateCore (1.7.0)
 
 DEPENDENCIES:
-  - Alamofire
-  - Boardy
   - GHSearch (from `submodules/gh-search`)
   - GHSearchIO (from `submodules/gh-search`)
   - HelloAuth (from `submodules/hello-auth`)
   - HelloAuthIO (from `submodules/hello-auth`)
   - Home (from `submodules/home`)
   - HomeIO (from `submodules/home`)
-  - SDWebImage
-  - SiFUtilities
-  - TinyInjector
-  - ViewStateCore
 
 SPEC REPOS:
   trunk:
@@ -95,8 +87,6 @@ SPEC REPOS:
     - Boardy
     - SDWebImage
     - SiFUtilities
-    - TinyInjector
-    - ViewStateCore
 
 EXTERNAL SOURCES:
   GHSearch:
@@ -123,9 +113,7 @@ SPEC CHECKSUMS:
   HomeIO: 1a058e51eccc46028423b9107deae7490221f368
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SiFUtilities: 200da09bee8bde6bbe7fb494c281daf6ac57aff2
-  TinyInjector: 476a499d7435c8b8013094f243655720ecc9aacd
-  ViewStateCore: 2f433a0e17e44edf36e90f52c0887d981c08d1a7
 
-PODFILE CHECKSUM: 81b024093084d0f497b7473184d2e5bf773ff2a4
+PODFILE CHECKSUM: 59b0c91b3fbcf5f3fffc5d966532f4beb0e4bf10
 
 COCOAPODS: 1.11.2

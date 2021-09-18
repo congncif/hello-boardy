@@ -5,13 +5,6 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'HelloBoardy' do
-  pod 'Alamofire'
-	pod 'Boardy'
-	pod 'TinyInjector'
-	pod 'SiFUtilities'
-  pod 'SDWebImage'
-  pod 'ViewStateCore'
-  
   pod "HelloAuth", :path => "submodules/hello-auth"
   pod "HelloAuthIO", :path => "submodules/hello-auth"
 
