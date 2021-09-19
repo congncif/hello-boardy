@@ -10,7 +10,7 @@ import Boardy
 import Foundation
 import HelloAuthIO
 
-typealias AuthUserInput = Any?
+typealias AuthUserInput = AuthUser
 
 typealias AuthUserOutput = AuthUserInput
 

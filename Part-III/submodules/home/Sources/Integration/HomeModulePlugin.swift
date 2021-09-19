@@ -24,9 +24,6 @@ public struct HomeModulePlugin: ModulePlugin {
         case .default:
             mainProducer.registerBoard(identifier) { [unowned mainProducer] identifier in
                 HomeBoard(identifier: identifier, builder: HomeBuilder(), producer: BoardProducer(externalProducer: mainProducer, registrationsBuilder: { _ in
-                    BoardRegistration(.modAuthUser) { identifier in
-                        AuthUserBarrierBoard(identifier: identifier)
-                    }
                 }))
             }
         }

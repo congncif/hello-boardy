@@ -53,22 +53,10 @@ extension HomeBoard: HomeDelegate {
     }
 
     func openGitHubSearch() {
-        /// Use BlockTaskParameter to check if user logged in, otherwise require logging in before opening GHSearch
-        let inlineParameter = CurrentUserParameter().onSuccess(target: motherboard) { mainboard, user in
-            if let user = user {
-                mainboard.ioGHSearch().activation.activate()
-            } else {
-                /// Use AuthUser barrier to wait logging in before opening GHSearch, once barrier overcome the GHSearch will be activated
-                mainboard.ioAuthUser().activation.activate(with: .wait { [unowned mainboard] _ in
-                    mainboard.ioGHSearch().activation.activate()
-                })
-
-                /// Login required
-                mainboard.ioAuthenticate().activation.activate()
-            }
+        motherboard.ioSignOnUser().activation.activate { [unowned self] user in
+            self.motherboard.ioGHSearch().activation.activate()
+            self.currentUserBus.transport(input: user)
         }
-        /// Check current user with inline parameter
-        motherboard.ioCurrentUser().activation.activate(with: inlineParameter)
     }
 
     func performLogout() {
@@ -93,16 +81,6 @@ private extension HomeBoard {
                 bus.transport(input: user)
             case .userClosed:
                 break
-            }
-        }
-
-        /// Listen Authenticate flow to mark AuthUser barrier as overcome or cancel
-        motherboard.ioAuthenticate().flow.addTarget(motherboard) { mainboard, result in
-            switch result {
-            case let .authenticated(user):
-                mainboard.ioAuthUser().activation.activate(with: .overcome(user))
-            case .userClosed:
-                mainboard.ioAuthUser().activation.activate(with: .cancel)
             }
         }
 

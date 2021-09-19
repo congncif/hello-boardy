@@ -45,6 +45,17 @@ public struct HelloAuthModulePlugin: ModulePlugin {
             mainProducer.registerBoard(identifier) { [unowned mainProducer] identifier in
                 SignOutTaskBoardFactory.make(identifier: identifier)
             }
+        case .signOnUser:
+            mainProducer.registerBoard(identifier) { [unowned mainProducer] identifier in
+                SingleAuthBoard(identifier: identifier, producer: BoardProducer(externalProducer: mainProducer, registrationsBuilder: { _ in
+                    BoardRegistration(.modAuthUser) { identifier in
+                        AuthUserBarrierBoard(identifier: identifier)
+                    }
+                    BoardRegistration(.modGetCurrentUser) { identifier in
+                        GetCurrentUserTaskBoardFactory.make(identifier: identifier)
+                    }
+                }))
+            }
         }
     }
 
@@ -56,6 +67,8 @@ public struct HelloAuthModulePlugin: ModulePlugin {
             return identifier
         case let .logout(identifier):
             return identifier
+        case let .signOnUser(identifier):
+            return identifier
         }
     }
 
@@ -64,6 +77,7 @@ public struct HelloAuthModulePlugin: ModulePlugin {
         case authenticate(BoardID)
         case currentUser(BoardID)
         case logout(BoardID)
+        case signOnUser(BoardID)
     }
 }
 
@@ -73,6 +87,7 @@ extension HelloAuthModulePlugin {
             HelloAuthModulePlugin(service: .authenticate(HelloAuthID.authenticate)),
             HelloAuthModulePlugin(service: .currentUser(HelloAuthID.currentUser)),
             HelloAuthModulePlugin(service: .logout(HelloAuthID.logout)),
+            HelloAuthModulePlugin(service: .signOnUser(HelloAuthID.signOnUser)),
         ]
     }
 }
