@@ -22,7 +22,7 @@ public struct HomeModulePlugin: ModulePlugin {
 
         switch service {
         case .default:
-            mainProducer.registerBoard(identifier) { [unowned mainProducer] identifier in
+            mainProducer.registerBoard(identifier) { identifier in
                 HomeBoard(identifier: identifier, builder: HomeBuilder(), producer: BoardProducer(externalProducer: mainProducer, registrationsBuilder: { _ in
                 }))
             }

@@ -22,7 +22,7 @@ public struct GHSearchModulePlugin: ModulePlugin {
 
         switch service {
         case .default:
-            mainProducer.registerBoard(identifier) { [unowned mainProducer] identifier in
+            mainProducer.registerBoard(identifier) { identifier in
                 GitHubSearchBoard(identifier: identifier, builder: GitHubSearchBuilder(), producer: BoardProducer(externalProducer: mainProducer, registrationsBuilder: { producer in
                     BoardRegistration(.modSearch) { identifier in
                         SearchTaskBoardFactory.make(identifier: identifier)

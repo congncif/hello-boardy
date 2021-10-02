@@ -22,7 +22,7 @@ public struct HelloAuthModulePlugin: ModulePlugin {
 
         switch service {
         case .authenticate:
-            mainProducer.registerBoard(identifier) { [unowned mainProducer] identifier in
+            mainProducer.registerBoard(identifier) { identifier in
                 LoginBoard(identifier: identifier, builder: LoginBuilder(), producer: BoardProducer(externalProducer: mainProducer, registrationsBuilder: { producer in
                     BoardRegistration(.modRegister) { identifier in
                         RegisterBoard(identifier: identifier, builder: RegisterBuilder(), producer: producer)
@@ -38,15 +38,15 @@ public struct HelloAuthModulePlugin: ModulePlugin {
                 }))
             }
         case .currentUser:
-            mainProducer.registerBoard(identifier) { [unowned mainProducer] identifier in
+            mainProducer.registerBoard(identifier) { identifier in
                 GetCurrentUserTaskBoardFactory.make(identifier: identifier)
             }
         case .logout:
-            mainProducer.registerBoard(identifier) { [unowned mainProducer] identifier in
+            mainProducer.registerBoard(identifier) { identifier in
                 SignOutTaskBoardFactory.make(identifier: identifier)
             }
         case .signOnUser:
-            mainProducer.registerBoard(identifier) { [unowned mainProducer] identifier in
+            mainProducer.registerBoard(identifier) { identifier in
                 SingleAuthBoard(identifier: identifier, producer: BoardProducer(externalProducer: mainProducer, registrationsBuilder: { _ in
                     BoardRegistration(.modAuthUser) { identifier in
                         AuthUserBarrierBoard(identifier: identifier)
